@@ -1,0 +1,11 @@
+private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {                                               
+    String username = jTextFieldUsername.getText();
+    String password = new String(jPasswordField.getPassword());
+
+    // Simple authentication logic
+    if ("Admin".equals(username) && "Admin1234".equals(password)) {
+        JOptionPane.showMessageDialog(this, "Login Successful");
+    } else {
+        JOptionPane.showMessageDialog(this, "Invalid Username or Password");
+    }
+}
